@@ -30,12 +30,12 @@ metadata:
     # alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-southeast-1:203918878350:certificate/5da2da5d-b5fb-4865-a5b4-806184da1faa
-    alb.ingress.kubernetes.io/ssl-redirect: '443'
+    alb.ingress.kubernetes.io/ssl-redirect: "443"
     kubernetes.io/ingress.class: alb
 spec:
   # ingressClassName: alb
   rules:
-    - host: netflix.myanmartechsolutions.site
+    - host: netflix.cloudstackmm.site
       http:
         paths:
           - path: /
@@ -45,7 +45,7 @@ spec:
                 name: netflix-app
                 port:
                   number: 80
-    # - host: grafana.myanmartechsolutions.site
+    # - host: grafana.cloudstackmm.site
     #   http:
     #     paths:
     #       - path: /
@@ -54,5 +54,4 @@ spec:
     #           service:
     #             name: kube-prometheus-stack-grafana   # Grafana service name
     #             port:
-
     #               number: 80

@@ -15,8 +15,7 @@ spec:
         app: netflix-app
     spec:
       containers:
-      - name: netflix-app
-        image: saw-cloudops/netflix:v1.5
-        ports:
-        - containerPort: 80
-
+        - name: netflix-app
+          image: hlaingminpaing/netflix:v1.5
+          ports:
+            - containerPort: 80
