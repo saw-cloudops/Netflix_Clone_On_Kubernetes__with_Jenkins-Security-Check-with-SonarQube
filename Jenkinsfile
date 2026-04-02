@@ -13,7 +13,7 @@ pipeline {
     environment {
         SCANNER_HOME = tool 'sonarqube-scanner'
         TRIVY_HOME = '/usr/bin'
-        REPO_URL = 'https://github.com/saw-cloudops/Deploy-Netflix-Clone-on-Kubernetes.git'
+        REPO_URL = 'https://github.com/saw-cloudops/Netflix_Clone_On_Kubernetes__with_Jenkins-Security-Check-with-SonarQube.git'
         REPO_BRANCH = 'main'
         DOCKER_IMAGE_NAME = 'saw-cloudops/netflix'
         SONAR_PROJECT_NAME = 'Netflix'
