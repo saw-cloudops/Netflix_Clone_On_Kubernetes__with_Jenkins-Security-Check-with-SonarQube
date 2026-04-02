@@ -13,7 +13,7 @@ Deploy Netflix Clone on Cloud using Jenkins - DevSecOps Project!
 - Clone your application's code repository onto the EC2 instance:
     
     ```bash
-    git clone https://github.com/hlaingminpaing/Deploy-Netflix-Clone-on-Kubernetes.git
+    git clone https://github.com/saw-cloudops/Netflix_Clone_On_Kubernetes__with_Jenkins-Security-Check-with-SonarQube.git
     ```
     
 
@@ -41,7 +41,7 @@ Deploy Netflix Clone on Cloud using Jenkins - DevSecOps Project!
     docker rmi -f netflix
     ```
 
-It will show an error cause you need API key
+It will show an error because you need an API key.
 
 **Step 4: Get the API Key:**
 
@@ -180,7 +180,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/hlaingminpaing/Deploy-Netflix-Clone-on-Kubernetes.git'
+                git branch: 'main', url: 'https://github.com/saw-cloudops/Deploy-Netflix-Clone-on-Kubernetes.git'
             }
         }
         stage("Sonarqube Analysis") {
@@ -270,7 +270,7 @@ pipeline{
         }
         stage('Checkout from Git'){
             steps{
-                git branch: 'main', url: 'https://github.com/hlaingminpaing/Deploy-Netflix-Clone-on-Kubernetes.git'
+                git branch: 'main', url: 'https://github.com/saw-cloudops/Deploy-Netflix-Clone-on-Kubernetes.git'
             }
         }
         stage("Sonarqube Analysis "){
@@ -329,7 +329,7 @@ pipeline{
 }
 
 
-If you get docker login failed errorr
+If you get a Docker login failed error:
 
 sudo su
 sudo usermod -aG docker jenkins
@@ -537,7 +537,7 @@ sudo systemctl restart jenkins
    `http://<your-prometheus-ip>:9090/targets`
 
 
-####Grafana
+### Grafana
 
 **Install Grafana on Ubuntu 22.04 and Set it up to Work with Prometheus**
 

@@ -13,9 +13,9 @@ pipeline {
     environment {
         SCANNER_HOME = tool 'sonarqube-scanner'
         TRIVY_HOME = '/usr/bin'
-        REPO_URL = 'https://github.com/hlaingminpaing/Deploy-Netflix-Clone-on-Kubernetes.git'
+        REPO_URL = 'https://github.com/saw-cloudops/Deploy-Netflix-Clone-on-Kubernetes.git'
         REPO_BRANCH = 'main'
-        DOCKER_IMAGE_NAME = 'hlaingminpaing/netflix'
+        DOCKER_IMAGE_NAME = 'saw-cloudops/netflix'
         SONAR_PROJECT_NAME = 'Netflix'
         SONAR_PROJECT_KEY = 'Netflix'
         DOCKER_CREDENTIALS_ID = 'dockerhub'
@@ -169,7 +169,7 @@ pipeline {
                 body: "Project: ${env.JOB_NAME}<br/>" +
                       "Build Number: ${env.BUILD_NUMBER}<br/>" +
                       "URL: ${env.BUILD_URL}<br/>",
-                to: 'hlaingminpaing.ygn@gmail.com', // Update with your email
+                to: 'saw-cloudops@gmail.com', // Update with your email
                 attachmentsPattern: 'trivyfs.txt,trivyimage.txt'
         }
     }
