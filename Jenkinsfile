@@ -15,7 +15,7 @@ pipeline {
         TRIVY_HOME = '/usr/bin'
         REPO_URL = 'https://github.com/saw-cloudops/Netflix_Clone_On_Kubernetes__with_Jenkins-Security-Check-with-SonarQube.git'
         REPO_BRANCH = 'main'
-        DOCKER_IMAGE_NAME = 'saw-cloudops/netflix'
+        DOCKER_IMAGE_NAME = 'hlaingminpaing/netflix'
         SONAR_PROJECT_NAME = 'Netflix'
         SONAR_PROJECT_KEY = 'Netflix'
         DOCKER_CREDENTIALS_ID = 'dockerhub'
